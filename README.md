@@ -1,5 +1,3 @@
-Markdown
-
 # 🚀 CRM API - Sistema de Gestão de Clientes e Interações
 
 Este é um ecossistema de API robusto para gerenciamento de clientes e registro de interações (notas), desenvolvido com **Django Rest Framework (DRF)**. O projeto conta com autenticação segura, controle de acesso baseado em perfis (RBAC), banco de dados relacional de produção, conteinerização completa e esteira de integração contínua (CI).
@@ -79,16 +77,16 @@ A cada git push ou pull_request realizado nas branches principais, um workflow a
 
 4.  Validação do Build da imagem Docker para checar se a receita (Dockerfile) continua íntegra.
 
-🛣️ Principais Endpoints da API
-Método	Endpoint	Descrição	Acesso
-POST	/api/token/	Gera os tokens JWT (Access e Refresh)	Público
-POST	/api/token/refresh/	Renova o Token de Acesso expirado	Público
-GET	/api/clientes/	Lista os clientes (Filtro por ?search=)	Autenticado (Vê apenas os seus / Admin vê tudo)
-POST	/api/clientes/novo/	Cadastra um novo cliente	Autenticado (Vincula o dono automaticamente)
-POST	/api/notas/novo/	Cria uma nota para um cliente específico	Autenticado (Dono do cliente ou Admin)
-GET	/api/clientes/<id>/notas/	Lista as notas de um cliente específico	Autenticado (Dono do cliente ou Admin)
+## 🛣️ Principais Endpoints da API
 
----
+| Método | Endpoint | Descrição | Acesso |
+| :--- | :--- | :--- | :--- |
+| **POST** | `/api/token/` | Gera os tokens JWT (Access e Refresh) | Público |
+| **POST** | `/api/token/refresh/` | Renova o Token de Acesso expirado | Público |
+| **GET** | `/api/clientes/` | Lista os clientes (Filtro por `?search=`) | Autenticado (Vê apenas os seus / Admin vê tudo) |
+| **POST** | `/api/clientes/novo/` | Cadastra um novo cliente | Autenticado (Vincula o dono automaticamente) |
+| **POST** | `/api/notas/novo/` | Cria uma nota para um cliente específico | Autenticado (Dono do cliente ou Admin) |
+| **GET** | `/api/clientes/<id>/notas/` | Lista as notas de um cliente específico | Autenticado (Dono do cliente ou Admin) |
 
 ## 🤝 Como Contribuir
 
@@ -102,7 +100,7 @@ GET	/api/clientes/<id>/notas/	Lista as notas de um cliente específico	Autentica
 
 ## ✒️ Desenvolvedor
 
-* **Lucas Elias** - *Desenvolvimento Backend, Testes e DevOps* - [Seu GitHub](https://github.com/lucaselias1)
+* **Lucas Elias** - *Desenvolvimento Backend, Testes e DevOps* - [Meu GitHub](https://github.com/lucaselias1)
 
 ---
 
