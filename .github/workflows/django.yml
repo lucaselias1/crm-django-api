@@ -33,3 +33,13 @@ jobs:
       run: |
         coverage run --source='.' manage.py test clientes
         coverage report
+
+    - name: Executar Testes com Coverage
+      run: |
+        coverage run --source='.' manage.py test clientes
+        coverage report
+
+    # ADICIONE ESTE NOVO PASSO NO FINAL:
+    - name: Validar Build da Imagem Docker
+      run: |
+        docker build -t crm-api-teste:latest .
